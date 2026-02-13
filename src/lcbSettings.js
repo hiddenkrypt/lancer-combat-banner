@@ -16,6 +16,14 @@ export function buildSettings(){
     type: Boolean,
     default: true
   });
+  game.settings.register("lancer-combat-banner", "toggleTokenImage", {
+    name: "ADA_COMBATBANNER.Settings.toggleTokenImage.Name",
+    hint: "ADA_COMBATBANNER.Settings.toggleTokenImage.Hint",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: false
+  });
   game.settings.register("lancer-combat-banner", "colorMode", {
     name: "ADA_COMBATBANNER.Settings.colorRules.Name",
     hint: "ADA_COMBATBANNER.Settings.colorRules.Hint",

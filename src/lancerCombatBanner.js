@@ -92,7 +92,7 @@ function LancerCombatBanner() {
 
     let currentImgHTML = document.createElement("img");
     currentImgHTML.id = "yourTurnImageId";
-    currentImgHTML.src = combatant.actor.img;
+    currentImgHTML.src = game.settings.get( "lancer-combat-banner", "toggleTokenImage" ) ? combatant.img : combatant.actor.img;
     currentImgHTML.classList.add("yourTurnImg", "adding");
 
     let bannerDiv = document.createElement("div");
